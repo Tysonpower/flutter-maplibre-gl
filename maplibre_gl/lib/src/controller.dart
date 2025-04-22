@@ -91,10 +91,11 @@ class MapLibreMapController extends ChangeNotifier {
     _cameraPosition = initialCameraPosition;
 
     _maplibrePlatform.onFeatureTappedPlatform.add((payload) {
+      final id = payload["id"]?.toString() ?? '';
+      final layerId = payload["layerId"]?.toString() ?? '';
       for (final fun
           in List<OnFeatureInteractionCallback>.from(onFeatureTapped)) {
-        fun(payload["id"], payload["point"], payload["latLng"],
-            payload["layerId"]);
+        fun(id, payload["point"], payload["latLng"], layerId);
       }
     });
 
