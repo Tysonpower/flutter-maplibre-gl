@@ -80,6 +80,7 @@ class SymbolOptions {
     this.iconHaloColor,
     this.iconHaloWidth,
     this.iconHaloBlur,
+    this.iconAllowOverlap,
     this.textOpacity,
     this.textColor,
     this.textHaloColor,
@@ -112,6 +113,7 @@ class SymbolOptions {
   final String? iconHaloColor;
   final double? iconHaloWidth;
   final double? iconHaloBlur;
+  final bool? iconAllowOverlap;
   final double? textOpacity;
   final String? textColor;
   final String? textHaloColor;
@@ -185,6 +187,7 @@ class SymbolOptions {
     addIfPresent('iconHaloColor', iconHaloColor);
     addIfPresent('iconHaloWidth', iconHaloWidth);
     addIfPresent('iconHaloBlur', iconHaloBlur);
+    addIfPresent('iconAllowOverlap', iconAllowOverlap);
     addIfPresent('textOpacity', textOpacity);
     addIfPresent('textColor', textColor);
     addIfPresent('textHaloColor', textHaloColor);
