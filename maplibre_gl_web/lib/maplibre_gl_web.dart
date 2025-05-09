@@ -10,7 +10,8 @@ import 'dart:html' as html hide Event;
 import 'dart:js';
 import 'dart:js_util';
 import 'dart:math';
-import 'dart:ui_web' as ui;
+import 'dart:ui' as ui;
+import 'dart:ui_web' as uiweb;
 import 'package:flutter/services.dart';
 
 import 'package:flutter/foundation.dart';
